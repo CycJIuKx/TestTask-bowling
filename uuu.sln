@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToonyColorsPro2.Demo", "ToonyColorsPro2.Demo.csproj", "{04411565-0C99-5876-3C18-C0DB4513549D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{108B2A4C-0916-1A9D-5BF9-8F684B54AA72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToonyColorsPro.Runtime", "ToonyColorsPro.Runtime.csproj", "{7CEB524F-F495-1007-8C06-D28221E45B12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToonyColorsPro.Editor", "ToonyColorsPro.Editor.csproj", "{CFD2BC68-E05F-D11C-DF0B-AAABC0C6E624}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04411565-0C99-5876-3C18-C0DB4513549D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04411565-0C99-5876-3C18-C0DB4513549D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04411565-0C99-5876-3C18-C0DB4513549D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04411565-0C99-5876-3C18-C0DB4513549D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{108B2A4C-0916-1A9D-5BF9-8F684B54AA72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{108B2A4C-0916-1A9D-5BF9-8F684B54AA72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{108B2A4C-0916-1A9D-5BF9-8F684B54AA72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{108B2A4C-0916-1A9D-5BF9-8F684B54AA72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CEB524F-F495-1007-8C06-D28221E45B12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CEB524F-F495-1007-8C06-D28221E45B12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CEB524F-F495-1007-8C06-D28221E45B12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CEB524F-F495-1007-8C06-D28221E45B12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFD2BC68-E05F-D11C-DF0B-AAABC0C6E624}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFD2BC68-E05F-D11C-DF0B-AAABC0C6E624}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFD2BC68-E05F-D11C-DF0B-AAABC0C6E624}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFD2BC68-E05F-D11C-DF0B-AAABC0C6E624}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
