@@ -40,25 +40,25 @@ public class ShotSystem : MonoBehaviour
         arrow.gameObject.SetActive(true);
         process = true;
         // while (!Input.GetMouseButtonDown(0))
-        while (true)
-        {
-            yield return null;
-            while (currentAngle < 89)
-            {
-               // arrow.rotation = Quaternion.RotateTowards(arrow.rotation, Quaternion.Euler(0,90,0),Time.deltaTime * rotateSpeed);
-             currentAngle = Mathf.MoveTowards(currentAngle, 90, Time.deltaTime * rotateSpeed);
-             arrow.rotation = Quaternion.Euler(0, currentAngle, 0);
-                yield return null;
-            }
-            while (currentAngle > -89)
-            {
-               // arrow.rotation = Quaternion.RotateTowards(arrow.rotation, Quaternion.Euler(0, -90, 0), Time.deltaTime * rotateSpeed);
-                 currentAngle = Mathf.MoveTowards(currentAngle, -90, Time.deltaTime * rotateSpeed);
-                 arrow.rotation = Quaternion.Euler(0, currentAngle, 0);
-                yield return null;
-            }
-
-        }
+      // while (true)
+      // {
+      //     yield return null;
+      //     while (currentAngle < 89)
+      //     {
+      //        // arrow.rotation = Quaternion.RotateTowards(arrow.rotation, Quaternion.Euler(0,90,0),Time.deltaTime * rotateSpeed);
+      //      currentAngle = Mathf.MoveTowards(currentAngle, 90, Time.deltaTime * rotateSpeed);
+      //      arrow.rotation = Quaternion.Euler(0, currentAngle, 0);
+      //         yield return null;
+      //     }
+      //     while (currentAngle > -89)
+      //     {
+      //        // arrow.rotation = Quaternion.RotateTowards(arrow.rotation, Quaternion.Euler(0, -90, 0), Time.deltaTime * rotateSpeed);
+      //          currentAngle = Mathf.MoveTowards(currentAngle, -90, Time.deltaTime * rotateSpeed);
+      //          arrow.rotation = Quaternion.Euler(0, currentAngle, 0);
+      //         yield return null;
+      //     }
+      //
+      // }
 
 
 

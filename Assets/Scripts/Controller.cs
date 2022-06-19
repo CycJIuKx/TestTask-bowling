@@ -44,7 +44,7 @@ public class Form
     {
         if (vusialGo == null) return;
 
-        if (outside)
+        if (used)
         {
             vusialGo.GetComponent<MeshRenderer>().material.color = Color.red;
         }

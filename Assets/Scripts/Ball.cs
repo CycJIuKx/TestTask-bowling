@@ -19,7 +19,7 @@ public class Ball : MonoBehaviour
     private bool transformMakingProcess = false;
     private Form form;
 
-
+    private bool isDead;
     public Ball Init(Form form, Controller controller)
 
     {
@@ -42,7 +42,7 @@ public class Ball : MonoBehaviour
     {
         if (transformMakingProcess == false)
         {
-            myTransform.Rotate(moveSpeed/2, 0, 0);
+            myTransform.Rotate(moveSpeed / 2, 0, 0);
             myTransform.localPosition = Vector3.MoveTowards(myTransform.localPosition, form.point + jumpOffset, Time.deltaTime * moveSpeed);
         }
     }
@@ -60,7 +60,7 @@ public class Ball : MonoBehaviour
     }
     IEnumerator FindNearPointProcess()
     {
-        while (true)
+        while (!isDead)
         {
             FindNearFormToMid();
             yield return new WaitForSeconds(1 / moveSpeed * ChangePositonRateFactor);
@@ -237,35 +237,33 @@ public class Ball : MonoBehaviour
     }
 
 
-  
+
     public void Die()
     {
+        isDead = true;
+        Debug.Log($"{gameObject.name} die form used ={form.used}");
+        form.MakeUsed(false);
         XOR.SoundCreator.Create(onDieClip);
-       // Debug.Log("die " + gameObject.name);
         StartCoroutine(DieProcess());
     }
     IEnumerator DieProcess()
     {
+        Debug.Log($"{gameObject.name} die process form used ={form.used}");
         GetComponent<Collider>().enabled = false;
         controller.OnBallDie(this);
-        // float timer = 1;
-        // while (timer > 0)
-        // {
-        //     myTransform.localScale = Vector3.one * timer;
-        //     timer -= Time.deltaTime * 4;
-        //     yield return null;
-        // }
+
         Instantiate(destroyEffect, transform.position, Quaternion.identity);
         yield return new WaitForSeconds(0.3f);
         form.MakeUsed(false);
         yield return null;
         form.MakeUsed(false);
+        Debug.Log($"{gameObject.name} die end form used ={form.used}");
         Destroy(gameObject);
     }
 
 
 
-  
+
     public void TransformToHugeBall(BonusBall ball)
     {
         StartCoroutine(transformProcess(ball));

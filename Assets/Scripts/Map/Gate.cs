@@ -60,7 +60,7 @@ public class Gate : MonoBehaviour
         if (ball)
         {
             Activate();
-            OnActivate.Invoke();
+            OnActivate?.Invoke();
 
         }
     }
