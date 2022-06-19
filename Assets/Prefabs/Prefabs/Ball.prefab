@@ -110,7 +110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onDieClip:
     clip: {fileID: 8300000, guid: 679157ad56094244394b1b2d3068028a, type: 3}
-    volume: 0.3
+    volume: 0.1
   destroyEffect: {fileID: 2658816838637455650, guid: 706f78cb4f42576458265aee394b8deb, type: 3}
   useLog: 0
   ChangePositonRateFactor: 1

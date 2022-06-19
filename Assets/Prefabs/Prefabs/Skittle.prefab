@@ -102,7 +102,7 @@ MonoBehaviour:
   forceZ: {x: 3, y: 8}
   collisionClip:
     clip: {fileID: 8300000, guid: 6c56dcc3ad8cc594e935375454755883, type: 3}
-    volume: 0.2
+    volume: 0.1
 --- !u!65 &1534113865785012498
 BoxCollider:
   m_ObjectHideFlags: 0
